@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 w-full z-50 shadow-md transition-all duration-300 backdrop-blur-md bg-[#D4EBF8]/40 dark:bg-[#080326]/90"
+    class="fixed top-0 left-0 w-full z-50 shadow-lg transition-all duration-300 backdrop-blur-md bg-[#D4EBF8] dark:bg-[#080326]/95"
   >
     <div class="flex justify-between items-center p-6 lg:px-12 relative z-20">
       <!-- Logo -->

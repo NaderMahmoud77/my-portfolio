@@ -5,13 +5,22 @@
       <MyTitle text="Contact Me" />
 
       <BackGradient />
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10" v-animate-on-scroll.once>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10"
+        v-animate-on-scroll.once
+      >
         <!-- Left Side: Info -->
         <div class="flex flex-col justify-center space-y-8">
-          <h3 class="text-3xl font-bold text-primary dark:text-white">
+          <h3
+            class="text-3xl font-bold text-primary dark:text-white flex gap-4"
+          >
             Let’s work together
-            <span class="animate-bounce inline-block">🚀</span>
+            <Icon
+              icon="mdi:rocket-launch"
+              class="text-primary dark:text-secondary animate-bounce text-4xl"
+            />
           </h3>
+
           <p
             class="text-gray-600 dark:text-gray-400 text-base leading-relaxed max-w-md"
           >

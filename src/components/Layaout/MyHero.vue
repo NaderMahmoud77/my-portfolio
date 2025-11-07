@@ -1,10 +1,10 @@
 <template>
   <section
+    id="home"
     v-animate-on-scroll.once
     class="flex justify-center items-center dark:text-white min-h-[calc(100vh+10px)] md:min-h-[calc(100vh+130px)] mt-20 lg:mt-0"
   >
-  
-  <BackGradient />
+    <BackGradient />
     <!-- Main -->
     <main
       class="container absolute grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg-p-8"
@@ -31,7 +31,7 @@
           experiences.
         </p>
         <!-- Buttons -->
-        <div
+        <a href="#contact"
           class="mt-6 flex justify-center lg:justify-start text-primary dark:text-white font-semibold"
         >
           <Button text="Hire My" />
@@ -42,12 +42,12 @@
             ><Icon icon="line-md:download-loop" class="text-2xl" />
             <span class="ml-1">Resume</span></a
           >
-        </div>
+      </a>
         <!-- ==== Buttons ==== -->
       </header>
       <!-- === aside === -->
       <aside
-        class="container flex justify-center lg:justify-end mt-20 lg:mt-0 items-center flex-wrap"
+        class="container flex justify-center items-center flex-wrap lg:justify-end mt-20 lg:mt-0"
       >
         <figure
           class="card relative m-[30px] md:w-[420px] md:h-[420px] md:before:w-[430px] md:before:h-[440px] w-[280px] h-[300px] before:w-[300px] before:h-[300px] before:border-[25px] before:border-primary dark:before:border-secondary"
@@ -102,8 +102,6 @@ const { mode } = useDarkMode();
   left: 0;
   background: transparent;
   z-index: 1;
-}
-.container .card::before {
   filter: url(#wavy1);
 }
 </style>

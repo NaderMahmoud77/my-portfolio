@@ -13,32 +13,13 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from "vue";
-const NavBar = defineAsyncComponent(() =>
-  import("@/components/Layaout/NavBar.vue")
-);
-const HeroSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/MyHero.vue")
-);
-const CounterSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/Counter.vue")
-);
-const ServesSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/MyServices.vue")
-);
-const SkillsSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/MySkills.vue")
-);
-const ProjectsSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/MyProjects.vue")
-);
-const ContactSection = defineAsyncComponent(() =>
-  import("@/components/Layaout/MyContact.vue")
-);
-const MyFooter = defineAsyncComponent(() =>
-  import("@/components/Layaout/MyFooter.vue")
-);
-const BtnScrollTop = defineAsyncComponent(() =>
-  import("@/components/Layaout/ScrollTop.vue")
-);
+import NavBar from "@/components/Layaout/NavBar.vue";
+import HeroSection from "@/components/Layaout/MyHero.vue";
+import CounterSection from "@/components/Layaout/Counter.vue";
+import ServesSection from "@/components/Layaout/MyServices.vue";
+import SkillsSection from "@/components/Layaout/MySkills.vue";
+import ProjectsSection from "@/components/Layaout/MyProjects.vue";
+import ContactSection from "@/components/Layaout/MyContact.vue";
+import MyFooter from "@/components/Layaout/MyFooter.vue";
+import BtnScrollTop from "@/components/Layaout/ScrollTop.vue";
 </script>

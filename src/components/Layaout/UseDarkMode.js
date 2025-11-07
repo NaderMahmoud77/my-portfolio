@@ -14,15 +14,14 @@ const toggleMode = () => {
   }
 };
 
-onMounted(() => {
-  // Sync with initial state
-  if (mode.value) {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-});
-
 export function useDarkMode() {
+  onMounted(() => {
+    // Sync with initial state
+    if (mode.value) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  });
   return { mode, toggleMode };
 }

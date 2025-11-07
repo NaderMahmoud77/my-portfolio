@@ -1,6 +1,6 @@
 <template>
   <article
-  class="max-w-sm min-h-[450px] flex flex-col overflow-hidden shadow-lg rounded border border-secondary dark:bg-[#ffffff29] bg-primary"
+  class="max-w-md min-h-[450px] flex flex-col overflow-hidden shadow-lg rounded border dark:border-secondary dark:bg-[#ffffff29] bg-primary"
 >
   <!-- Image -->
   <figure>
