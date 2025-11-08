@@ -10,7 +10,7 @@
         <a
           @click="$emit('close')"
           :href="href.href"
-          class="relative block font-semibold md:text-lg lg:text-xl text-primary dark:text-white transition-all duration-300 group-hover:scale-105 group-hover:text-secondary dark:group-hover:text-secondary"
+          class="relative block font-semibold md:text-lg lg:text-xl text-primary dark:text-white transition-all duration-300 group-hover:scale-105 dark:group-hover:text-secondary"
         >
           {{ href.name }}
           <!-- Underline -->
