@@ -1,5 +1,23 @@
 export let projects = [
   {
+    title: "Ella-commerce",
+    discreption:
+      "A modern and responsive e-commerce website featuring product collections, categories, and a smooth cart system. Built with Vue, Vuetify, and Swiper for a clean and fast user experience.",
+    image: new URL("@/assets/images/pro-8.png", import.meta.url).href,
+    tags: ["Vue", "Vuetify", "Swiper.js", "Pinia", "Sass"],
+    liveLink: "https://nadermahmoud77.github.io/ella-commerc/",
+    codeLink: "",
+  },
+  {
+    title: "Programming Learning Platform",
+    discreption:
+      "A modern and responsive learning platform offering courses, categories, and interactive lessons. Built with Vue, Pinia, Tailwind, and PrimeVue for a smooth user experience.",
+    image: new URL("@/assets/images/pro-9.png", import.meta.url).href,
+    tags: ["Vue", "Pinia", "Tailwind", "PrimeVue", "I18n", "Swiper.js"],
+    liveLink: "https://nadermahmoud77.github.io/Platform/",
+    codeLink: "",
+  },
+  {
     title: "Restaurant Website",
     discreption:
       "A modern and responsive restaurant website showcasing the menu, featured dishes, and contact section. Built with HTML, CSS, and JavaScript for a smooth user experience.",
