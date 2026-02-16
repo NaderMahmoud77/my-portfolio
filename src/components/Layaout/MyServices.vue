@@ -1,23 +1,23 @@
 <template>
-  <section class="py-20" id="services">
+  <section class="py-24" id="services">
     <div class="container mx-auto px-6">
       <!-- Title -->
       <MyTitle text="My Services" />
 
-      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-12">
         <div
           v-for="(service, i) in services"
           :key="i"
-          class="group relative p-6 bg-[#f8fbff] dark:bg-[#ffffff29] rounded-2xl text-center transition-all duration-100 hover:shadow-2xl"
-          v-animate-on-scroll.once="{ delay: i * 0.1 }"
+          v-animate-on-scroll.once="{ delay: i * 0.08 }"
+          class="group relative p-6 rounded-2xl transition-all duration-500 bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-slate-200/50 dark:border-white/10 shadow-lg shadow-slate-200/40 dark:shadow-black/30 hover:shadow-2xl hover:-translate-y-2"
         >
-          <div class="relative flex justify-center -top-10">
+          <!-- Icon wrapper -->
+          <div class="relative flex justify-center -mt-16">
             <div
-              class="relative bg-primary rounded-full w-[80px] h-[80px] flex items-center justify-center transition-all duration-500 group-hover:-translate-y-3 group-hover:bg-gradient-to-r group-hover:from-primary group-hover:via-blue-400 group-hover:to-purple-500"
+              class="relative bg-primary rounded-full w-20 h-20 flex items-center justify-center transition-all duration-500 group-hover:bg-gradient-to-r group-hover:from-primary/30 group-hover:via-blue-300/20 group-hover:to-purple-400/20"
             >
-              <!-- البوردر حوالين الأيقونة -->
               <span
-                class="absolute inset-1 rounded-full border border-secondary"
+                class="absolute inset-1 rounded-full border border-secondary/50"
               ></span>
 
               <Icon
@@ -27,13 +27,15 @@
             </div>
           </div>
 
+          <!-- Title -->
           <h3
-            class="relative text-xl font-semibold text-primary dark:text-white mb-3"
+            class="text-xl font-semibold text-primary dark:text-white mt-6 mb-3"
           >
             {{ service.title }}
           </h3>
 
-          <p class="text-primary/80 dark:text-gray-400">
+          <!-- Description -->
+          <p class="text-primary/80 dark:text-gray-400 text-sm">
             {{ service.desc }}
           </p>
         </div>
@@ -46,5 +48,5 @@
 // Components
 import MyTitle from "@/components/Layaout/TitleAllSections.vue";
 
-import {services} from "../../Data/Services";
+import { services } from "../../Data/Services";
 </script>

@@ -1,50 +1,69 @@
 export const skills = [
+  // Core Web
   {
     id: 1,
-    title: "Html",
-    value: 95,
+    title: "HTML",
     img: "https://img.icons8.com/color/100/html-5--v1.png",
   },
   {
     id: 2,
-    title: "Css",
-    value: 90,
+    title: "CSS",
     img: "https://img.icons8.com/color/100/css3.png",
   },
   {
     id: 3,
     title: "JavaScript",
-    value: 92,
     img: "https://img.icons8.com/color/100/javascript--v1.png",
   },
+
+  // React Ecosystem
   {
     id: 4,
-    title: "Vue.js",
-    value: 90,
-    img: "https://img.icons8.com/color/100/vue-js.png",
-  },
-  {
-    id: 5,
-    title: "Nuxt.js",
-    value: 85,
-    img: "https://img.icons8.com/color/100/nuxt-jc.png",
-  },
-  {
-    id: 6,
     title: "React",
-    value: 88,
     img: "https://img.icons8.com/color/100/react-native.png",
   },
   {
+    id: 5,
+    title: "Redux Toolkit",
+    img: "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+  },
+  {
+    id: 6,
+    title: "MUI",
+    img: "https://mui.com/static/logo.png",
+  },
+
+  // Vue Ecosystem
+  {
     id: 7,
-    title: "Pinia",
-    value: 80,
-    img: "https://pinia.vuejs.org/logo.svg",
+    title: "Vue.js",
+    img: "https://img.icons8.com/color/100/vue-js.png",
   },
   {
     id: 8,
+    title: "Nuxt.js",
+    img: "https://img.icons8.com/color/100/nuxt-jc.png",
+  },
+  {
+    id: 9,
+    title: "Pinia",
+    img: "https://pinia.vuejs.org/logo.svg",
+  },
+  {
+    id: 10,
+    title: "Vuetify",
+    img: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEyIiBmaWxsPSIjMjI2N0ZGIi8+PHRleHQgeD0iMTIiIHk9IjE1IiBmb250LXNpemU9IjEwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+VjwvdGV4dD48L3N2Zz4=",
+  },
+
+  // Other Tools
+  {
+    id: 11,
     title: "Tailwind CSS",
-    value: 87,
     img: "https://img.icons8.com/color/100/tailwindcss.png",
+  },
+  {
+    id: 12,
+    title: "Git & GitHub",
+    img: "https://img.icons8.com/ios-glyphs/100/github.png",
   },
 ];

@@ -15,18 +15,12 @@
       <div class="md:hidden z-30">
         <button class="block focus:outline-none" @click="isOpen = !isOpen">
           <span v-show="!isOpen" class="flex flex-col gap-1.5">
-            <span
-              class="nader block w-7 h-0.5 bg-primary dark:bg-secondary animate-bounceX"
-              style="animation-delay: 0ms"
-            ></span>
-            <span
-              class="nader block w-7 h-0.5 bg-primary dark:bg-secondary animate-bounceX"
-              style="animation-delay: 200ms"
-            ></span>
-            <span
-              class="nader block w-7 h-0.5 bg-primary dark:bg-secondary animate-bounceX"
-              style="animation-delay: 400ms"
-            ></span>
+            <button @click="toggleMenu" class="p-2 focus:outline-none">
+              <Icon
+                icon="line-md:menu"
+                class="text-2xl text-primary dark:text-secondary transition-all duration-300"
+              />
+            </button>
           </span>
         </button>
       </div>

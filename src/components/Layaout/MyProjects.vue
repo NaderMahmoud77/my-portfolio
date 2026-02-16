@@ -1,18 +1,23 @@
 <template>
-  <section id="projects" class="relative p-16 w-11/12 mx-auto">
+  <section id="projects" class="relative container mx-auto px-6">
     <!-- Title -->
     <MyTitle text="My Projects" />
 
     <!-- Custom Navigation Buttons -->
-    <button
-      class="swiper-prev absolute top-[60%] sm:top-2/3 md:left-4 left-0 transform -translate-y-1/2 z-10 dark:text-primary text-white dark:bg-secondary bg-primary p-3 sm:p-4 rounded-full"
-    >
-      <Icon icon="line-md:arrow-left" class="font-bold sm:text-3xl" />
+
+    <button class="swiper-prev button-3d" @click="prevSlide">
+      <div class="button-top">
+        <span class="material-icons">❮</span>
+      </div>
+      <div class="button-bottom"></div>
+      <div class="button-base"></div>
     </button>
-    <button
-      class="swiper-next absolute top-[60%] sm:top-2/3 md:right-4 right-0 transform -translate-y-1/2 z-10 dark:text-primary text-white dark:bg-secondary bg-primary p-3 sm:p-4 rounded-full"
-    >
-      <Icon icon="line-md:arrow-right" class="font-bold sm:text-3xl" />
+    <button class="swiper-next button-3d" @click="nextSlide">
+      <div class="button-top">
+        <span class="material-icons">❯</span>
+      </div>
+      <div class="button-bottom"></div>
+      <div class="button-base"></div>
     </button>
 
     <!-- Swiper Component -->
@@ -21,7 +26,7 @@
       :effect="'coverflow'"
       grabCursor
       centeredSlides
-      :slidesPerView="'auto'"
+      slidesPerView="auto"
       :coverflowEffect="{
         rotate: 50,
         stretch: 0,
@@ -33,12 +38,12 @@
       :navigation="navigationOptions"
       pagination
       :modules="[EffectCoverflow, Navigation]"
-      class="max-w-full mt-32"
+      class="max-w-full mt-4"
     >
       <swiper-slide class="max-w-[300px]" v-for="(p, i) in projects" :key="i">
         <ProjectsCard
           :title="p.title"
-          :discreption="p.discreption"
+          :description="p.description"
           :image="p.image"
           :tags="p.tags"
           :liveLink="p.liveLink"
@@ -71,3 +76,98 @@ let navigationOptions = {
 // Data
 import { projects } from "../../Data/Projects";
 </script>
+
+<style scoped>
+/* Button Swiper Next and Prive */
+.button-3d {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px;
+  min-width: 1em;
+  min-height: 1em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  /* margin: 10px; */
+  border-radius: 20px;
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 8px 16px;
+  color: #fff;
+  background-image: linear-gradient(
+    145deg,
+    var(--color-primary),
+    var(--color-primaryTwo)
+  );
+  border-radius: 20px;
+  transition:
+    transform 0.3s,
+    border-radius 0.3s,
+    background 10s;
+}
+
+.button-3d:active .button-top {
+  border-radius: 10px 10px 8px 8px / 8px;
+  transform: translateY(2px);
+  background-image: linear-gradient(
+    145deg,
+    var(--color-primary),
+    var(--color-primaryTwo)
+  );
+}
+
+.button-bottom {
+  position: absolute;
+  z-index: 1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 20px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  background-image: linear-gradient(
+    145deg,
+    var(--color-primary),
+    var(--color-primaryTwo)
+  );
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  transition:
+    border-radius 0.2s,
+    padding-top 0.2s;
+}
+
+.button-base {
+  position: absolute;
+  z-index: 0;
+  top: 4px;
+  left: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 2px 2px rgba(0, 0, 0, 0.25);
+  transition:
+    border-radius 0.2s,
+    padding-top 0.2s;
+}
+
+.button-3d:active .button-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
+}
+
+.button-3d:active .button-base {
+  border-radius: 10px 10px 8px 8px / 8px;
+}
+</style>
