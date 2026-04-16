@@ -38,9 +38,13 @@
       :navigation="navigationOptions"
       pagination
       :modules="[EffectCoverflow, Navigation]"
-      class="max-w-full mt-4"
+      class="max-w-full mt-4 projects-swiper"
     >
-      <swiper-slide class="max-w-[300px]" v-for="(p, i) in projects" :key="i">
+      <swiper-slide
+        class="max-w-[300px] projects-swiper__slide"
+        v-for="(p, i) in projects"
+        :key="i"
+      >
         <ProjectsCard
           :title="p.title"
           :description="p.description"
@@ -57,7 +61,7 @@
 <!-- ------------- JS ---------------- -->
 <script setup>
 // Components
-import MyTitle from "@/components/Layaout/TitleAllSections.vue";
+import MyTitle from "@/components/AllSections/TitleAllSections.vue";
 import ProjectsCard from "@/components/UI/ProjectCard.vue";
 // swiper
 import "swiper/css";
@@ -78,6 +82,29 @@ import { projects } from "../../Data/Projects";
 </script>
 
 <style scoped>
+/* ── Swiper container ─────────────────────────── */
+.projects-swiper {
+  width: 100%;
+  padding: 2rem 0 3.5rem; /* bottom room for pagination dots */
+}
+
+.projects-swiper__slide {
+  max-width: 320px;
+
+  /* Inactive slides are subtly dimmed */
+  opacity: 0.55;
+  transform: scale(0.92);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* Active (center) slide is fully visible and slightly larger */
+.projects-swiper__slide.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* Button Swiper Next and Prive */
 .button-3d {
   -webkit-appearance: none;

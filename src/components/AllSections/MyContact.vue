@@ -91,7 +91,7 @@
 <script setup>
 // Components
 import Button from "@/components/UI/Button.vue";
-import MyTitle from "@/components/Layaout/TitleAllSections.vue";
+import MyTitle from "@/components/AllSections/TitleAllSections.vue";
 import BackGradient from "@/components/UI/BackGradient.vue";
 
 // Data

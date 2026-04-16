@@ -12,7 +12,7 @@
     </figure>
 
     <!-- Content -->
-    <section class="p-4 pb-5 flex-1">
+    <section class="p-4 flex-1">
       <header>
         <h3 class=" font-semibold text-lg mb-2 text-primary dark:text-white">
           {{ title }}

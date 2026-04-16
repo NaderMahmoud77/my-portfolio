@@ -80,6 +80,7 @@ export let projects = [
     liveLink: "https://nadermahmoud77.github.io/Christmas-Gift/",
     codeLink: "",
   },
+
   {
     title: "Quiz App",
     description:
@@ -87,6 +88,15 @@ export let projects = [
     image: new URL("@/assets/images/pro-7.jpeg", import.meta.url).href,
     tags: ["Html", "Css", "Js"],
     liveLink: "https://nadermahmoud77.github.io/Awesome-Quiz-App/",
+    codeLink: "",
+  },
+  {
+    title: "wooden-boards-store",
+    description:
+      "A modern e-commerce web application built with React and Redux Toolkit, featuring smooth product browsing with Swiper, robust form handling using React Hook Form and Yup, and a clean, responsive UI optimized for both performance and user experience.",
+    image: new URL("@/assets/images/pro-11.png", import.meta.url).href,
+    tags: ["React", "Redux-Toolkit", "Swiper", "React-Hook Form", "Yup"],
+    liveLink: "https://wooden-boards-store.netlify.app/",
     codeLink: "",
   },
 ];

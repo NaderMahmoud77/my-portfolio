@@ -13,13 +13,13 @@
 </template>
 
 <script setup>
-import NavBar from "@/components/Layaout/NavBar.vue";
-import HeroSection from "@/components/Layaout/MyHero.vue";
-import CounterSection from "@/components/Layaout/Counter.vue";
-import ServesSection from "@/components/Layaout/MyServices.vue";
-import SkillsSection from "@/components/Layaout/MySkills.vue";
-import ProjectsSection from "@/components/Layaout/MyProjects.vue";
-import ContactSection from "@/components/Layaout/MyContact.vue";
-import MyFooter from "@/components/Layaout/MyFooter.vue";
-import BtnScrollTop from "@/components/Layaout/ScrollTop.vue";
+import NavBar from "@/components/AllSections/NavBar.vue";
+import HeroSection from "@/components/AllSections/MyHero.vue";
+import CounterSection from "@/components/AllSections/Counter.vue";
+import ServesSection from "@/components/AllSections/MyServices.vue";
+import SkillsSection from "@/components/AllSections/MySkills.vue";
+import ProjectsSection from "@/components/AllSections/MyProjects.vue";
+import ContactSection from "@/components/AllSections/MyContact.vue";
+import MyFooter from "@/components/AllSections/MyFooter.vue";
+import BtnScrollTop from "@/components/AllSections/ScrollTop.vue";
 </script>

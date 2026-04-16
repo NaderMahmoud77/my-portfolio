@@ -46,7 +46,7 @@
 
 <script setup>
 // Components
-import MyTitle from "@/components/Layaout/TitleAllSections.vue";
+import MyTitle from "@/components/AllSections/TitleAllSections.vue";
 
 import { services } from "../../Data/Services";
 </script>

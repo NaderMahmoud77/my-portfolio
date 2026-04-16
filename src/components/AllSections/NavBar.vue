@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import MyLinksNav from "@/components/Layaout/MyLinkNav.vue";
+import MyLinksNav from "@/components/AllSections/MyLinkNav.vue";
 import Drawer from "@/components/UI/Drawer.vue";
 import { ref } from "vue";
 

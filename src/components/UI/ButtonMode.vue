@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { useDarkMode } from "@/components/Layaout/useDarkMode.js";
+import { useDarkMode } from "@/hooks/useDarkMode.js";
 
 const { mode, toggleMode } = useDarkMode();
 </script>

@@ -49,7 +49,7 @@
 <!------------------ JS ------------------>
 <script setup>
 // Components
-import MyTitle from "@/components/Layaout/TitleAllSections.vue";
+import MyTitle from "@/components/AllSections/TitleAllSections.vue";
 // Data Skills
 import { skills } from "../../Data/Skills";
 </script>

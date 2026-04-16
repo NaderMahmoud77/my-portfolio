@@ -26,7 +26,7 @@
           responsive web applications. Skilled in
           <span class="font-semibold text-primary dark:text-gray-400"
             >Js, Css, Html, React, MUI, Redux Toolkit, Vue.js, Nuxt.js, Pinia,
-             PrimeVue</span
+            PrimeVue</span
           >, I craft solutions that balance business needs with great user
           experiences.
         </p>
@@ -39,7 +39,7 @@
 
           <a
             download
-            href="https://drive.google.com/uc?export=download&id=1UsLsy7th534beHEoRBGXVRkHX56zLfXn"
+            href="https://drive.google.com/uc?export=download&id=1pp2Nj3xLhYhmNvqtNS3Z0f5OZaOXlVd-"
             class="font-semibold w-[10rem] h-[55px] text-lg ml-2 border-2 rounded-full dark:text-secondary dark:border-secondary bg-white dark:bg-transparent flex justify-center items-center border-primary text-primary"
             ><Icon icon="line-md:download-loop" class="text-2xl" />
             <span class="ml-1">Resume</span></a
@@ -90,7 +90,7 @@
 // components
 import BackGradient from "@/components/UI/BackGradient.vue";
 import Button from "@/components/UI/Button.vue";
-import { useDarkMode } from "@/components/Layaout/useDarkMode.js";
+import { useDarkMode } from "@/hooks/useDarkMode.js";
 const { mode } = useDarkMode();
 </script>
 
