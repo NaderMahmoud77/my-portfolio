@@ -41,10 +41,10 @@ import CountUp from "vue-countup-v3";
 import BackGradient from "@/components/UI/BackGradient.vue";
 
 const numbers = ref([
-  { title: "Created Projects", num: 150 },
-  { title: "Projects", num: 150 },
-  { title: "Experience", num: 2 },
-  { title: "Happy Clients", num: 80 },
+  { title: "Created Projects", num: 25 },
+  { title: "Projects", num: 30 },
+  { title: "Experience", num: 1 },
+  { title: "Happy Clients", num: 25 },
 ]);
 
 const inView = ref(false);

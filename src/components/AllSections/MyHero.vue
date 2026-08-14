@@ -25,7 +25,7 @@
           A front-end developer passionate about turning ideas into modern,
           responsive web applications. Skilled in
           <span class="font-semibold text-primary dark:text-gray-400"
-            >Js, Css, Html, React, MUI, Redux Toolkit, Vue.js, Nuxt.js, Pinia,
+            >Js, Css, Html, React, MUI, Redux Toolkit, Next.js, Vue.js, Nuxt.js, Pinia,
             PrimeVue</span
           >, I craft solutions that balance business needs with great user
           experiences.

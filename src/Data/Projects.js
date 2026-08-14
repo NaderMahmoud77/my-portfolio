@@ -14,7 +14,7 @@ export let projects = [
       "A responsive cultural web application that showcases Ancient Egyptian artifacts and museums through a modern, intuitive interface. It delivers structured historical content with engaging visuals, bilingual support (AR/EN), and Light/Dark modes for an enhanced user experience.",
     image: new URL("@/assets/images/pro-10.jpg", import.meta.url).href,
     tags: ["Nuxt.js", "Pinia", "Tailwind", "Vuetify", "I18n", "Swiper.js"],
-    liveLink: "https://pharaonic-antiquities.netlify.app/",
+    liveLink: "https://pharaonic-antiquities.vercel.app/",
     codeLink: "",
   },
   {
@@ -96,7 +96,7 @@ export let projects = [
       "A modern e-commerce web application built with React and Redux Toolkit, featuring smooth product browsing with Swiper, robust form handling using React Hook Form and Yup, and a clean, responsive UI optimized for both performance and user experience.",
     image: new URL("@/assets/images/pro-11.png", import.meta.url).href,
     tags: ["React", "Redux-Toolkit", "Swiper", "React-Hook Form", "Yup"],
-    liveLink: "https://wooden-boards-store.netlify.app/",
+    liveLink: "https://wooden-boards-store-zeta.vercel.app/",
     codeLink: "",
   },
 ];

@@ -10,9 +10,9 @@ export const services = [
     icon: "mdi:responsive",
   },
   {
-    title: "Vuex / Pinia",
-    desc: "State management solutions for Vue.js applications.",
-    icon: "logos:pinia",
+    title: "React / Next.js",
+    desc: "Building modern and scalable web applications with React and Next.js.",
+    icon: "logos:nextjs-icon",
   },
   {
     title: "Performance Optimization",

@@ -30,24 +30,24 @@ export const skills = [
   {
     id: 6,
     title: "MUI",
-    img: "https://mui.com/static/logo.png",
+    img: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
+  },
+  {
+    id: 7,
+    title: "Next.js",
+    img: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
   },
 
   // Vue Ecosystem
   {
-    id: 7,
+    id: 8,
     title: "Vue.js",
     img: "https://img.icons8.com/color/100/vue-js.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "Nuxt.js",
     img: "https://img.icons8.com/color/100/nuxt-jc.png",
-  },
-  {
-    id: 9,
-    title: "Pinia",
-    img: "https://pinia.vuejs.org/logo.svg",
   },
   {
     id: 10,
